@@ -1,0 +1,57 @@
+.b {
+    border: 1px solid red;
+}
+
+@keyframes slideFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+
+.animate-slide-top {
+    animation: slideFromTop 0.5s ease-in-out;
+}
+
+.search-show {
+    height: 40px;
+}
+
+.errorlist {
+    margin-bottom: 5px;
+    font-size: small;
+    color: red;
+}
+
+.cart-icon {
+    font-size: 24px;
+}
+
+.cart-counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.login {
+    background-image: url("../images/slider-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
